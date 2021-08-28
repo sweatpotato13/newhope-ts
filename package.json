@@ -1,17 +1,17 @@
 {
-    "name": "newhope",
+    "name": "newhope-ts",
     "version": "1.0.0",
     "description": "NewHope Post-Quantum-Cryptography algorithm",
     "main": "./dist/src/index.js",
     "types": "./dist/src/index.d.ts",
     "repository": {
         "type": "git",
-        "url": "https://github.com/sweatpotato13/newhope.git"
+        "url": "https://github.com/sweatpotato13/newhope-ts.git"
     },
     "bugs": {
-        "url": "https://github.com/sweatpotato13/newhope/issues"
+        "url": "https://github.com/sweatpotato13/newhope-ts/issues"
     },
-    "homepage": "https://github.com/sweatpotato13/newhope",
+    "homepage": "https://github.com/sweatpotato13/newhope-ts",
     "files": [
         "dist"
     ],

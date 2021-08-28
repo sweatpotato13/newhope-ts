@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
--   ✨ add newhope ([fb39cdb](https://github.com/sweatpotato13/newhope/commit/fb39cdbc247eb8edf4deddc782d5c34807d1e2bf))
+-   ✨ add newhope ([fb39cdb](https://github.com/sweatpotato13/newhope-ts/commit/fb39cdbc247eb8edf4deddc782d5c34807d1e2bf))
 
 ### [1.0.1](https://github.com/sweatpotato13/nodejs-typescript-boilerplate/compare/v1.0.0...v1.0.1) (2021-07-25)
 
