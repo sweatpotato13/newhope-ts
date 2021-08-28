@@ -9,7 +9,7 @@
   </a>
 </p>
 
-> Ethersdcan API library with typescript
+> Post-Quantum Cryptography Key Agreement Algorithm
 
 ### 🏠 [Homepage](https://github.com/sweatpotato13/newhope-ts)
 
