@@ -1,0 +1,84 @@
+{
+    "name": "newhope",
+    "version": "1.0.0",
+    "description": "NewHope Post-Quantum-Cryptography algorithm",
+    "main": "./dist/src/index.js",
+    "types": "./dist/src/index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sweatpotato13/newhope.git"
+    },
+    "bugs": {
+        "url": "https://github.com/sweatpotato13/newhope/issues"
+    },
+    "homepage": "https://github.com/sweatpotato13/newhope",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "test": "jest",
+        "test:cov": "jest --coverage",
+        "start:dev": "ts-node-dev --poll --respawn --transpile-only src/index.ts --trace-sync-io",
+        "start:prod": "ts-node src/index.ts",
+        "lint": "eslint \"{src,test}/**/*.ts\" --fix",
+        "prettier": "prettier --write --config .prettierrc \"{src,test}/**/*.ts\"",
+        "build": "tsc",
+        "prebuild": "rimraf ./dist",
+        "release": "standard-version",
+        "release:major": "standard-version -- --release-as major",
+        "release:minor": "standard-version -- --release-as minor",
+        "release:patch": "standard-version -- --release-as patch",
+        "release:version": "standard-version -- --release-as"
+    },
+    "lint-staged": {
+        "*.{ts,tsx,js,jsx}": [
+            "yarn run eslint --fix"
+        ],
+        "*.{md,json}": [
+            "prettier --write"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged",
+            "prepare-commit-msg": "devmoji -e",
+            "commit-msg": "if git-branch-is dev; then commitlint -E HUSKY_GIT_PARAMS; fi"
+        }
+    },
+    "author": "Cute_Wisp <sweatpotato13@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "@commitlint/cli": "^12.1.4",
+        "@commitlint/config-conventional": "^12.1.4",
+        "@types/jest": "26.0.10",
+        "@types/node": "^14.14.37",
+        "@typescript-eslint/eslint-plugin": "^4.6.0",
+        "@typescript-eslint/parser": "^4.6.0",
+        "devmoji": "^2.3.0",
+        "dot-json": "^1.0.3",
+        "eslint": "^7.12.0",
+        "eslint-config-prettier": "^6.14.0",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-prettier": "^3.1.4",
+        "eslint-plugin-security": "^1.4.0",
+        "eslint-plugin-simple-import-sort": "^7.0.0",
+        "git-branch-is": "^4.0.0",
+        "git-format-staged": "^2.1.0",
+        "husky": "4.2.5",
+        "jest": "26.4.2",
+        "lint-staged": "^11.0.1",
+        "prettier": "^2.1.2",
+        "rimraf": "^2.6.2",
+        "standard-version": "^9.3.1",
+        "ts-jest": "26.2.0",
+        "ts-node-dev": "^1.1.6",
+        "typescript": "^3.7.4"
+    },
+    "jest": {
+        "testEnvironment": "node",
+        "coveragePathIgnorePatterns": [
+            "/node_modules/",
+            "/dist/"
+        ]
+    }
+}
